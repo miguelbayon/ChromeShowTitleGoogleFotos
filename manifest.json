@@ -16,7 +16,8 @@
     },
     "web_accessible_resources": [
         "/font/fontawesome-webfont.tff",
-        "/font/fontawesome-webfont.woff"
+        "/font/fontawesome-webfont.woff",
+        "/font/Fresca-Regular.ttf"
     ],
     "name": "Show Title Tag",
     "update_url": "http://clients2.google.com/service/update2/crx",

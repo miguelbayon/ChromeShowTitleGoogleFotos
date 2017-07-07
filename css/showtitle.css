@@ -26,23 +26,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Fresca';
+  src: url('chrome-extension://__MSG_@@extension_id__/font/Fresca-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 #showtitlewrapper {
   /*  Plugin styles
         ------------------------------------------------------- */
   position: fixed;
   display: inline-block;
-  margin: 0 auto;
-  height: 18px;
-  padding: 0 5px 0;
+  margin: 20px 20px;
+  padding: 20px;
   background-repeat: no-repeat;
   color: #000 !important;
   z-index: 9999;
-  font-size: 11px !important;
-  font-family: sans-serif !important;
+  font-size: 18px !important;
+  font-family: 'Fresca', sans-serif !important;
   width: auto;
-  background: -webkit-linear-gradient(top, #efefef 0%, #e0e0e0 100%);
-  border: 1px solid white;
-  box-shadow: 0px 0px 1px #5b5b5b;
+  background: rgba(255,255,255,0.7);
+  border: none;
 }
 #showtitlewrapper [class^="icon-"],
 #showtitlewrapper [class*=" icon-"] {
@@ -86,7 +90,7 @@
   content: "\f0a7";
 }
 #showtitlewrapper * {
-  font-size: 11px;
+  font-size: 60px;
 }
 #showtitlewrapper .tolong {
   color: #B60202;
@@ -158,4 +162,7 @@
 #showtitlewrapper.hide #showtitle-title,
 #showtitlewrapper.hide #showtitlemove {
   display: none;
+}
+.link {
+    display: none;
 }

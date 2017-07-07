@@ -16,6 +16,8 @@ var chrome_title_tag = {
         chrome_title_tag_last_change = ts;
 
         var htmltitle = document.title;
+        htmltitle = htmltitle.replace("Foto de", "");
+        htmltitle = htmltitle.replace(" - Google Fotos", "");
 
         if (htmltitle.length > tolong_cutoff) {
             htmltitle = htmltitle.slice(0, tolong_cutoff) + 'TOLONGCUTOFF' + htmltitle.slice(tolong_cutoff);
@@ -135,7 +137,7 @@ var chrome_title_tag = {
         var observer = new MutationObserver(this.set_title);
         observer.observe(document.querySelector('title'), { childList: true });
 
-        setInterval("chrome_title_tag.get_position()", 2000);
+        setInterval("chrome_title_tag.get_position()", 1000);
     }
 };
 /* Initialize the plugin */
